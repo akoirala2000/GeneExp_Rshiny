@@ -13,6 +13,8 @@ The app provides a user-friendly interface for uploading gene expression and cli
 
 After successfully uploading the datasets, users can select the gene of interest and the clinical variable from their respective dropdown menus. The gene names are dynamically fetched from the row names (genes) of the expression dataset, making it easier for users to select their desired gene without any manual input.
 
+
+
 ### 3. Handling Missing Values
 
 The app supports handling missing values in the clinical data by allowing users to specify the characters that represent missing values. Users can enter the characters representing missing values in a text input box labeled "NA Characters (separated by commas)". The app will use these specified characters while reading the datasets to handle missing values appropriately.
@@ -25,9 +27,13 @@ The app visualizes the gene expression data in two different ways based on the t
 
 For categorical clinical variables, the app generates a violin plot, providing an insight into the distribution of gene expression levels across different levels of the clinical variable. It also overlays box plots on the violins, showing additional information about medians and quartiles.
 
+![](./images/categorical.png)
+
 #### b. Scatter Plot with Regression Line (Numeric Clinical Variable)
 
 For numeric clinical variables, the app creates a scatter plot, enabling users to explore the relationship between gene expression levels and the numeric clinical variable. The plot includes a fitted regression line along with confidence intervals, helping to identify trends and correlations.
+
+![](./images/numeric.png)
 
 ### 5. Statistical Information
 
